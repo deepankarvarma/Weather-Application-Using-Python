@@ -30,7 +30,7 @@ city = st.text_input('Enter a city name:')
 if city:
     # Make API request for current weather
     vs=True
-    url = f'http://api.openweathermap.org/data/2.5/weather?q={city}&appid={API_KEY}&units=metric&lang=en'
+    url = f'http://api.openweathermap.org/data/2.5/weather?q={city}&appid={st.secrets["API_KEY"]}&units=metric&lang=en'
     response = requests.get(url)
     data = response.json()
 
