@@ -4,7 +4,7 @@ import pandas as pd
 import matplotlib.pyplot as plt
 
 # OpenWeatherMap API key
-API_KEY = '<your-api-key>'
+# API_KEY = '<your-api-key>'
 st.set_page_config(
     page_title="Weather Application",
     page_icon=":sunny:",
