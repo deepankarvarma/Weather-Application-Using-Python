@@ -46,7 +46,7 @@ if city:
         vs=False
 
     if vs :# Make API request for 24-hour forecast
-        url = f'http://api.openweathermap.org/data/2.5/forecast?q={city}&appid={API_KEY}&units=metric&lang=en'
+        url = f'http://api.openweathermap.org/data/2.5/forecast?q={city}&appid={st.secrets["API_KEY"]}&units=metric&lang=en'
         response = requests.get(url)
         data = response.json()
 
